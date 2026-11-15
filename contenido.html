@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCU-742 Contenido</title>
+<meta name="description" content="Materiales educativos y guías creados por los subgrupos del TCU-742.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/sitio.css">
+<link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="img/logo-tcu742.png" alt="Logo del TCU-742">
+      <span>TCU-742<small>Escuela de Ingeniería Civil · UCR</small></span>
+    </a>
+    <button class="burger" aria-label="Abrir o cerrar el menú" aria-controls="menu" onclick="document.getElementById('menu').classList.toggle('abierto')">☰</button>
+    <nav class="links" id="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a><a href="equipos.html">Equipos de trabajo</a><a href="talleres.html">Talleres</a><a href="planes-reguladores.html">Planes reguladores</a><a href="contenido.html" aria-current="page">Contenido</a>
+      <a href="index.html#contacto" class="cta">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="phead">
+    <div class="wrap">
+      <div class="migas"><a href="index.html">Inicio</a> / Contenido</div>
+      <h1>Contenido</h1>
+      <p class="lead">Guías, materiales educativos y recursos creados por los equipos del TCU-742 para las comunidades.</p>
+    </div>
+  </div>
+  <section class="interna">
+    <div class="wrap">
+      <div class="cabeza">
+        <div class="ojo">Iniciativas estudiantiles · UCR</div>
+        <h2>Materiales creados por los subgrupos</h2>
+        <p class="sub">Recursos técnicos, visuales y didácticos que nacen del trabajo colaborativo, el compromiso comunitario y el enfoque interdisciplinario, para fortalecer el aprendizaje colectivo y la divulgación accesible.</p>
+      </div>
+      <article class="tarjeta recurso">
+        <div class="portada">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+          <div><b>IE-288 · Guía en PDF</b><span>Mingo sin colillas</span></div>
+        </div>
+        <div class="info2">
+          <h3>Mingo sin colillas</h3>
+          <div class="autores">Johann Ruiz Michelsen · María Paula Gamboa Monge · María Paz Ureña Bonilla</div>
+          <p>La guía surge de una iniciativa local sobre el tratamiento social y la educación ambiental en torno a la colilla de cigarro, un contaminante poco visible en el cantón.</p>
+          <div class="palabras"><span class="chip">Educación</span><span class="chip">Ambiental</span><span class="chip">Santo Domingo</span><span class="chip">Colilla de cigarro</span></div>
+          <a class="btn azul" href="https://sites.google.com/view/tcu742/contenido">Abrir la guía en PDF</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>TCU-742 · Escuela de Ingeniería Civil, Universidad de Costa Rica</span>
+    <span>Santo Domingo de Heredia</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('menu').classList.remove('abierto')})});
+</script>
+</body>
+</html>
