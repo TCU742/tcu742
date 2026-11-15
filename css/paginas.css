@@ -21,7 +21,7 @@ section.interna.alt{background:#e8f0fa}
 
 /* EQUIPOS */
 .eq{padding:0;overflow:hidden;display:flex;flex-direction:column}
-.eq .media{height:190px;position:relative;display:grid;place-items:center;overflow:hidden}
+.eq .media{height:230px;position:relative;display:grid;place-items:center;overflow:hidden}
 .eq .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .eq .media svg{width:76px;height:76px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;color:var(--tinta);opacity:.55}
 .eq .cuerpo{padding:26px 28px 30px;display:flex;flex-direction:column;gap:10px}
@@ -101,3 +101,19 @@ section.interna.alt{background:#e8f0fa}
   .reglas{grid-template-columns:1fr}
   .tira{grid-template-columns:1fr 1fr}
 }
+
+/* GUÍA DE TANQUES SÉPTICOS */
+.guia{margin-top:24px;padding:32px 34px;display:flex;flex-direction:column;gap:12px}
+.guia h3{font-size:26px}
+.pdfs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+.pdf{display:flex;align-items:center;gap:14px;padding:18px 20px;border:1px solid var(--linea);border-radius:16px;background:var(--fondo);transition:transform .15s,border-color .15s}
+.pdf:hover{transform:translateY(-2px);border-color:var(--celeste)}
+.pdf .pi{flex:none;width:46px;height:46px;border-radius:13px;background:#bddcf9;display:grid;place-items:center;color:var(--azul)}
+.pdf .pi svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pdf b{display:block;font-family:var(--display);font-size:16px;color:var(--azul);line-height:1.25}
+.pdf small{font-size:13.5px;color:var(--suave)}
+@media(max-width:900px){.pdfs{grid-template-columns:1fr}}
+
+/* encuadre de fotos donde el sujeto no está al centro */
+.eq .media img[src$="arborizacion.jpg"]{object-position:center 66%}
+.eq .media img[src$="zonas-inseguras.jpg"]{object-position:center 58%}
